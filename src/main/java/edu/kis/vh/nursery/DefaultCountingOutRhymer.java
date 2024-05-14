@@ -4,7 +4,6 @@ public class DefaultCountingOutRhymer {
 
     private static final int LIMIT = 12;
     private static final int LAST_INDEX = LIMIT - 1;
-
     private static final int IF_EMPTY = -1;
 
     private static final int INIT_VALUE = -1;
