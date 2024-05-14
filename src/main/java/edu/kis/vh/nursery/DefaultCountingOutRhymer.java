@@ -4,15 +4,17 @@ public class DefaultCountingOutRhymer {
 
     private static final int LIMIT = 12;
     private static final int LAST_INDEX = LIMIT - 1;
-
     private static final int IF_EMPTY = -1;
 
     private static final int INIT_VALUE = -1;
 
     private final int[] numbers = new int[LIMIT];
 
-    public int total = INIT_VALUE;
+    private int total = INIT_VALUE;
 
+    public int getTotal() {
+        return total;
+    }
     public void countIn(int in) {
         if (!isFull()) numbers[++total] = in;
     }
