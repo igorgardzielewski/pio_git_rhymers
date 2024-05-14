@@ -13,6 +13,9 @@ public class DefaultCountingOutRhymer {
 
     private int total = INIT_VALUE;
 
+    public int getTotal() {
+        return total;
+    }
     public void countIn(int in) {
         if (!isFull()) numbers[++total] = in;
     }
